@@ -1,0 +1,32 @@
+main {
+    background-color: lightblue;
+    display: flex;
+    margin-top: 300px;
+    flex-wrap: wrap;
+
+}
+
+div {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+img {
+    width: 150px;
+}
+
+@media screen and (max-width: 850px) {
+    article {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    article {
+        width: 100%;
+    }
+}
