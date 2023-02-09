@@ -1,8 +1,16 @@
-main {
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
     background-color: lightblue;
+}
+
+main {
     display: flex;
-    margin-top: 300px;
     flex-wrap: wrap;
+    padding: 20px;
 
 }
 
@@ -11,22 +19,28 @@ div {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
+}
+
+.car {
+    padding: 5px;
 }
 
 
 img {
-    width: 150px;
+    width: 80%;
+    margin-top: 5px;
 }
 
-@media screen and (max-width: 850px) {
-    article {
+@media screen and (max-width: 1000px) {
+    div {
         width: 50%;
     }
 
 }
 
-@media screen and (max-width: 600px) {
-    article {
+@media screen and (max-width: 800px) {
+    div {
         width: 100%;
     }
 }

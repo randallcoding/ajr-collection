@@ -27,7 +27,7 @@ class FunctionsTest extends TestCase
         $this->assertEquals($expected, $case);
     }
 
-    public function testFailureMultiplyDisplayCars()
+    public function testFailureDisplayCars()
     {
         $expected = '';
         $input = [
@@ -42,7 +42,7 @@ class FunctionsTest extends TestCase
         $this->assertEquals($expected, $case);
     }
 
-    public function testFailureMultiplyDisplayCarsMissingYear()
+    public function testFailureDisplayCarsMissingYear()
     {
         $expected = '';
         $input = [
