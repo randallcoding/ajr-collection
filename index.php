@@ -3,17 +3,16 @@
 require_once 'functions.php';
 
 $db = createDB();
-$cars = getAllCars($db);
-$carsHtml = displayCars($cars);
+$carsHtml = displayCars(getAllCars($db));
 
 ?>
 <html>
 <head>
-
+    <link type="text/css" rel="stylesheet" href="collectionstyles.css" />
 </head>
 <body>
 <main>
-    <?php echo $carsHtml; ?>
+    <?= $carsHtml;?>
 </main>
 </body>
 </html>
